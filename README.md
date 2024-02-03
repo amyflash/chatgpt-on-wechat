@@ -1,4 +1,5 @@
-# 本项目参考https://github.com/zhayujie/chatgpt-on-wechat，基于这个做了些更付合自己需求的修改，我主要是在自己的服务器上进行docker部署，主要修改了docker-compose.yml文件
+# 本项目参考 https://github.com/zhayujie/chatgpt-on-wechat
+基于这个做了些更付合自己需求的修改，我主要是在自己的服务器上进行docker部署，主要修改了docker-compose.yml文件
 
 ## Docker部署
 
