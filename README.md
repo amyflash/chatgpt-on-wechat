@@ -73,7 +73,7 @@ services:
 ```bash
 sudo docker compose up -d
 ```
-运行 `sudo docker ps` 能查看到 NAMES 为 chatgpt-on-wechat 的容器即表示运行成功。
+运行 `sudo docker ps` 能查看到 NAMES 为 chatgpt-on-wechat 的容器即表示运行成功。多个是多个机器人的，就能看到qwen-on-wechat和linkai-on-wechat这两个容器
 
 注意：
 
@@ -85,6 +85,13 @@ sudo docker compose up -d
 ```bash
 sudo docker logs -f chatgpt-on-wechat
 ```
+
+如果中间有报错，可以进入容器重新执行：
+```bash
+sudo docker exec -it container /bin/bash
+python app.py
+```
+
 ### (3) 关闭容器，如果需要关闭容器，执行这个命令：
 
 ```bash
